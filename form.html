@@ -2,7 +2,26 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            @media (min-width: 501px) {
+                body{
+                    background-color: grey;
+                }
+                
+                button::before {
+                    width: 40px;
+                }
+            } 
+            @media (max-width: 500px) {
+                body{
+                    background-color:peachpuff;
+                }
+                button::before {
+                    width: 12px;
+                }
+            }
+
             input[type=text] {
                 background-color: rgb(240, 235, 235);
                 margin: 12px;
